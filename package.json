@@ -1,0 +1,37 @@
+{
+  "name": "spartan-e2e-playwright",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript E2E & API Test Automation Framework for Spartan Application with POM design pattern",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:ui-specs": "playwright test tests/*.spec.ts",
+    "test:hybrid": "playwright test tests/hybrid",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "api-testing",
+    "page-object-model",
+    "e2e-testing",
+    "spartan"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.4",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.3"
+  }
+}
